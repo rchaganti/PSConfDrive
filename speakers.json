@@ -1,0 +1,370 @@
+﻿[
+    {
+        "name":  "Raimund Andree",
+        "Company":  "Microsoft Germany",
+        "Country":  "Germany",
+        "Twitter":  "raimundandree",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Aleksandar Nikolic",
+        "Company":  "PowerShell Magazine",
+        "Country":  "Serbia",
+        "Twitter":  "alexandair",
+        "MVP":  true,
+        "Bio":  "Aleksandar Nikolic is a Cloud and Datacenter Management MVP, a Microsoft Azure MVP, a co-founder of PowerShellMagazine.com, and a community manager of PowerShell.com. Aleksandar is also a Microsoft Azure Advisor.\nAleksandar is experienced presenting and speaking to Microsoft customers, and is skilled with describing complex management and automation tasks even to beginning and novice users and scripters. Aleksandar has more than 18 years of experience as a system administrator. \nHe also delivers PowerShell and Azure training courses around the world and is a frequent speaker at IT conferences such as IT/Dev Connections, MMS, NIC, MS Sinergija, MS Windays, MS NTK, PowerShell Conference, PowerShell Summit, MS TechDays.\nYou can find him on Twitter (https://twitter.com/alexandair) and LinkedIn (http://www.linkedin.com/in/alexandair)."
+    },
+    {
+        "name":  "Andre Kamman",
+        "Company":  "CloudDBA",
+        "Country":  "Netherlands",
+        "Twitter":  "AndreKamman",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Andreas Nick",
+        "Company":  "Nick Informationstechnik GmbH",
+        "Country":  "Germany",
+        "Twitter":  "NickInformation",
+        "MVP":  false,
+        "Bio":  "Andreas has more than 20 years of experience in the IT business. He is the CTO and owner of the German company „Nick Informationstechnik GmbH“, specializing in designing, consulting and engineering all kinds of virtualization technologies, primarily Citrix and Microsoft products. Andreas is the author of a App-V 5 book. He is particularly interested in automation with PowerShell and tool programmierung. Especially with a PowerShell GUI. There are many examples of this on his blogs."
+    },
+    {
+        "name":  "Bartosz Bielawski",
+        "Company":  "Optiver",
+        "Country":  "Netherlands",
+        "Twitter":  "bielawb",
+        "MVP":  true,
+        "Bio":  "Bartosz (Bartek) Bielawski is a busy Windows engineer for Optiver, an international company. He loves PowerShell and automation and that love earned him the honour of Microsoft MVP. Author of the first PowerShell book in Polish \"PowerShell 5.0 Biblia\", and co-author of the \"PowerShell Deep Dives\" book.\n"
+    },
+    {
+        "name":  "Ben Gelens",
+        "Company":  "InSpark",
+        "Country":  "Netherlands",
+        "Twitter":  "bgelens",
+        "MVP":  true,
+        "Bio":  "Ben Gelens is a Cloud and Datacenter MVP (PowerShell) and technical consultant at Inspark in the Netherlands. While building clouds for his customers, Ben’s primary focus is automation and orchestration. As such, Ben has a great deal of field experience on all kinds of PowerShell subjects (e.g. Remoting, Tool making, DSC, SMA, Workflow) in all kinds of areas (e.g. Azure Stack, Windows Azure Pack, Active Directory, Office 365, Server Management, Azure). \n"
+    },
+    {
+        "name":  "Chrissy LeMaire",
+        "Company":  "NATO",
+        "Country":  "Belgium",
+        "Twitter":  "cl",
+        "MVP":  true,
+        "Bio":  "Chrissy LeMaire is a Windows PowerShell MVP and PASS PowerShell Virtual Group co-lead who has worked in IT for nearly 20 years. She works for General Dynamics and serves as the SQL Server DBA at NATO Special Ops HQ in Belgium. She is also an avid scripter, and has used PowerShell since it was introduced in 2005 at the Microsoft Professional Conference in Los Angeles. Chrissy is the creator of the popular dbatools PowerShell module for SQL Server. "
+    },
+    {
+        "name":  "Daniel Bohannon",
+        "Company":  "MANDIANT/FireEye",
+        "Country":  "USA",
+        "Twitter":  "danielhbohannon",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Daniel Both",
+        "Company":  "Optiver",
+        "Country":  "Netherlands",
+        "Twitter":  "poshboth",
+        "MVP":  false,
+        "Bio":  "PowerSheller since 2008 and a big fan ever since. Using PowerShell as a tool to get my work done on a daily basis. Sometimes, it even brings joy to my weekends :). Working as a Windows Systems Engineer @ Optiver."
+    },
+    {
+        "name":  "Holger Dr.Schwichtenberg",
+        "Company":  "IT-Visions",
+        "Country":  "Germany",
+        "Twitter":  "DOTNETDOKTOR",
+        "MVP":  true,
+        "Bio":  "Dr. Holger Schwichtenberg ist fachlicher Leiter des renommierten Microsoft-Expertennetzwerks www.IT-Visions.de, das zahlreiche Unternehmen in Deutschland und Europa durch Beratung, Schulung, Coaching und Support unterstützt. Zudem arbeitet er als Softwarearchitekt und Projektleiter bei der 5Minds IT Solutions GmbH \u0026 Co. KG (www.5minds.de). \n"
+    },
+    {
+        "name":  "Friedrich Weinmann",
+        "Company":  "Freelance PowerShell Consultant",
+        "Country":  "Germany",
+        "Twitter":  "FredWeinmann",
+        "MVP":  false,
+        "Bio":  "On the job, Fred is an IT analyst / administrator, a universalist who covers a wide spectrum of technologies in Microsoft-centric environments. As a naturally lazy person he keeps automating things with PowerShell ... only to find new things to automate. Again.\n"
+    },
+    {
+        "name":  "Irwin Strachan",
+        "Company":  "",
+        "Country":  "Netherlands",
+        "Twitter":  "IrwinStrachan",
+        "MVP":  false,
+        "Bio":  "**“Those that don\u0027t automate are doomed to repeat their tasks”**\n I\u0027ve been in IT some 20 years now, give or take. My specialty (I use that term loosely) is Microsoft infrastructure. I’m passionate about Active Directory (and yes, you guessed, in the scripting thereof) and all of the components that come to play. I’m passionate about anything PowerShell related! I enjoy blogging about my PowerShell adventures on whatever I’m working on. Blogging is way of giving back to our PowerShell community! \n"
+    },
+    {
+        "name":  "Jaap Brasser",
+        "Company":  "Rubrik",
+        "Country":  "Netherlands",
+        "Twitter":  "Jaap_Brasser",
+        "MVP":  true,
+        "Bio":  "Jaap is a Cloud and Automation Engineer and CDM MVP with a big passion for scripting and automation. As an IT professional Jaap is part of several professional communities, speaks \u0026 organizes technical events and writes articles on a variety of subjects on his personal blog and other websites or magazines.\n\nBlog:  jaapbrasser.com\n"
+    },
+    {
+        "name":  "Jakob Gottlieb Svendsen",
+        "Company":  "CTGlobal",
+        "Country":  "Denmark",
+        "Twitter":  "JakobGSvendsen",
+        "MVP":  true,
+        "Bio":  "**Jakob Gottlieb Svendsen**, Cloud and Datacenter Management MVP, is a principal consultant and lead of development at CT Global, a worldwide Microsoft partner in the cloud, data center and enterprise client management space. Since starting at CT Global in 2007 (formerly known as Coretech), he has focused on automation and development, primarily automating processes while developing tools, extensions, and scripts for Microsoft solutions. His primary focus is Automation, on premises and in the Cloud using System Center, Azure and Azure Stack. Jakob was a contributing author to System Center 2012 Service Manager Unleashed (2014). He has presented at a wide range of events, including TechEd and MMS. He has also authored several courses for CT Global. Jakob blogs at http://blog.ctglobalservices.com/author/jgs/\n\n\n\nSpeaker at: \n\n- PSConf.EU\n\n- Microsoft Ignite\n\n- TechEd North America\n\n- System Center Universe Europe\n\n- Experts Live\n\n- Techorama\n\n- ITDevConnections\n\n- Campus days (Microsoft Denmark)\n\n- Nordic infrastructure conference (4 years in a row)\n\n- Microsoft TechDays.SE\n\n- SCUG.DK/.NO\n\n- AZMUG (Arizona Microsoft User Group)\n\n- PSUG.DK (PowerShell User Group Denmark)\n\nand much more.\n\n\n\nAuthor of \"Hybrid Cloud Unleashed – powered by Azure \u0026 Azure Stack\" (2017)\n\nCo-Author of \"Service Manager 2012 Unleashed\" (2014)\n\nCo-Founder of the Danish PowerShell user group (www.psug.dk) \u0026 the Danish Cloud and Data Center user group\n"
+    },
+    {
+        "name":  "Jakub Jares",
+        "Company":  "CN Group s.r.o. ",
+        "Country":  "Czech Republic",
+        "Twitter":  "nohwnd",
+        "MVP":  true,
+        "Bio":  "I\u0027ve been testing with Pester before it was cool."
+    },
+    {
+        "name":  "Jan Egil Ring",
+        "Company":  "Crayon AS",
+        "Country":  "Norway",
+        "Twitter":  "JanEgilRing",
+        "MVP":  true,
+        "Bio":  "Jan Egil works as a Lead Architect at Crayon, Norway.\n\nHe mainly works with automation, and has a strong passion for PowerShell. Products and services he works with includes Microsoft infrastructure products such as Windows Server, System Center and Microsoft Azure.\n"
+    },
+    {
+        "name":  "Jan-Hendrik Peters",
+        "Company":  "Microsoft Germany",
+        "Country":  "Germany",
+        "Twitter":  "NyanHP",
+        "MVP":  false,
+        "Bio":  "    PS C:\\Users\\japete\u003e Get-Introduction\n\n    Name                : Jan-Hendrik Peters\n\n    Born                : 1987-01-24\n\n    Profession          : Premier Field Engineer @ Microsoft Germany\n\n    Years in field      : 8\n\n    Technologies        : {PowerShell, DevOps, DSC}\n\n    Hobbies             : {Travelling, Brewing, Coding}\n\n\n\nI am a Premier Field Engineer working for Microsoft Germany with a long love for PowerShell. When I am not working, I am contributing to PowerShell and AutomatedLab on GitHub, listen to all kinds of Metal and cure my own bacon."
+    },
+    {
+        "name":  "Jared Atkinson",
+        "Company":  "Invoke-IR",
+        "Country":  "USA",
+        "Twitter":  "jaredcatkinson",
+        "MVP":  true,
+        "Bio":  "Jared is a security researcher who specializes in Digital Forensics and Incident Response. Recently, he has been building and leading private sector Hunt Operations capabilities. In his previous life, Jared lead incident response missions for the U.S. Air Force Hunt Team, detecting and removing Advanced Persistent Threats on Air Force and DoD networks. Passionate about PowerShell and the open source community, Jared is the lead developer of PowerForensics, Uproot, and maintains a DFIR focused blog at www.invoke-ir.com."
+    },
+    {
+        "name":  "Jeff Wouters",
+        "Company":  "Methos",
+        "Country":  "Netherlands",
+        "Twitter":  "JeffWouters",
+        "MVP":  true,
+        "Bio":  "Jeff Wouters, MVP Cloud and Datacenter Management, has 10+ years of IT industry experience, born and raised in The Netherlands, and is the founder and CTO of Methos. Methos is a Microsoft partner based in The Netherlands focusing on cloud and datacenter automation.\n\nHe is the founder of the Dutch PowerShell User Group and frequent speaker at (inter)national IT events. Jeff is primarily a consultant and helps his customers to automate the datacenter and cloud environments."
+    },
+    {
+        "name":  "David das Neves",
+        "Company":  "Microsoft Germany",
+        "Country":  "Germany",
+        "Twitter":  "david_das_neves",
+        "MVP":  false,
+        "Bio":  "David das Neves is a former software developer and works now at Microsoft Germany as Premier Field Engineer with the main specialties of Powershell, Windows 10 and Client Security. He is also focused in client workshops and dev requests. Besides his work he writes his own blog, organizes the Powershell UG Munich and speaks at User Groups and Conferences on PS/Dev topics."
+    },
+    {
+        "name":  "Kirk Munro",
+        "Company":  "Learn on Demand Systems",
+        "Country":  "USA",
+        "Twitter":  "Poshoholic",
+        "MVP":  true,
+        "Bio":  "Kirk Munro is the world\u0027s first self-proclaimed Poshoholic, and a 10-time PowerShell MVP. Since being bitten by the PowerShell (PoSh) bug in 2006, Kirk has spent an enormous amount of time using and helping others learn PowerShell and automation, in roles of developer, evangelist, trainer, architect, Product Manager, and Director. These days he works as Director of Learning Solutions at Learn on Demand Systems, where he continues helping others learn by focusing on new technologies that enrich the learning experience even more. Outside of work, Kirk is returning to his software developer roots, learning mobile technologies like Xamarin and Ruby on Rails, and taking courses online whenever he can make the time to do so."
+    },
+    {
+        "name":  "Luc Dekens",
+        "Company":  "Eurocontrol",
+        "Country":  "Belgium",
+        "Twitter":  "LucD22",
+        "MVP":  true,
+        "Bio":  "Luc is an early PowerCLI adopter, and loves to blog about PowerCLI and it’s eco-system. He is a vExpert and Datacenter and Automation MVP. He is the co-author of the PowerCLI Reference Ed 1 \u0026 2. He recently received the inaugural VMTN Community Warrior Badge for community contributions. Luc’s area of expertise are automation, the Software Defined Datacenter and DevOps through PowerCLI and PowerShell."
+    },
+    {
+        "name":  "Mathias Jessen",
+        "Company":  "Booking.com BV",
+        "Country":  "Denmark",
+        "Twitter":  "IISResetMe",
+        "MVP":  false,
+        "Bio":  "Security engineer at scale, frequent victim of nerd sniping and PowerShell-fanboy 24/7. \nKnown by most for having submitted 1400+ powershell-tagged answers on StackOverflow, by some for having a passion around increasing performance by reducing algorithmic complexity, and by a few for rudely interrupting Microsoft employees and poshsplaining heavily."
+    },
+    {
+        "name":  "Matt Graeber",
+        "Company":  "SpecterOps",
+        "Country":  "USA",
+        "Twitter":  "mattifestation",
+        "MVP":  true,
+        "Bio":  "Matt Graeber is a security researcher and reverse engineer at Specter Ops, Inc. who specializes in the advancement of attacker tradecraft and detection. He has a varied background in red team operations, vulnerability research, and malware reverse engineering. Matt has presented at many industry conferences including Black Hat, DEF CON, Microsoft BlueHat, DerbyCon, BSides, and various PowerShell conferences. Matt is recognized as a Microsoft CDM MVP and is the author of various tools including PowerSploit, PowerShellArsenal, PSReflect, and CIMSweep."
+    },
+    {
+        "name":  "Matthew Hitchcock",
+        "Company":  "Microsoft",
+        "Country":  "Singapore",
+        "Twitter":  "hitchysg_MSFT",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Mateusz Czerniawski",
+        "Company":  "Objectivity LTD.",
+        "Country":  "Poland",
+        "Twitter":  "Arcontar",
+        "MVP":  false,
+        "Bio":  "My name is Mathew I hate repetive tasks and love PowerShell automation.\n\n===\n\nI\u0027m a co-founder of Polish PowerShell User Group, speaker and PowerShell Evangelists also an internal informal PowerShell trainer. My greatest achievemnt so far is bringing more people to PowerShell community everyday."
+    },
+    {
+        "name":  "Oyvind Kallstad",
+        "Company":  "FIFTEEN",
+        "Country":  "Norway",
+        "Twitter":  "okallstad",
+        "MVP":  true,
+        "Bio":  "Øyvind is a senior IT consultant at Crayon Norway, with more than 10 years of experience working with enterprise infrastructure environments. His passion is automation and PowerShell, and can often be seen mumbling about optimization and algorithms while staring out into space. His thoughts and projects are often expressed in his blog; Communary. He can also be reached though Twitter at @okallstad"
+    },
+    {
+        "name":  "Ravikanth Chaganti",
+        "Company":  "PowerShell Magazine",
+        "Country":  "India",
+        "Twitter":  "ravikanth",
+        "MVP":  true,
+        "Bio":  "Ravikanth is the founder and editor of the PowerShell Magazine. He is a multi-year recipient of Microsoft MVP aware and works at Dell EMC as a Senior Principal Systems Engineer. He blogs at http://www.ravichaganti.com/blog and you can follow him on Twitter @ravikanth."
+    },
+    {
+        "name":  "Rick Taylor",
+        "Company":  "ZAACT Consulting",
+        "Country":  "USA",
+        "Twitter":  "slkrck",
+        "MVP":  false,
+        "Bio":  "Rick Taylor is a SharePoint Architect and has assisted numerous, large companies in their implementations in high profile industries such as Defense, Financial, Manufacturing, and Health Care. He is a published author, co-author, and contributing author ( Microsoft Office SharePoint Server 2007 Administrator’s Companion by MS Press and SharePoint Server 2010 Administrator’s Companion) by MSPress. Rick worked for Microsoft in the Business Productivity Online Services division as a member of the SharePoint Platform Architecture Team , and was a Senior Consultant on the OpsCon Team. He is a Senior DevOps Engineer where he specializes in Migration, Compliance, Governance Enforcement, and Process Automation. Rick is an avid Triathlete (Clydesdale class), practices Bikram Yoga, enjoys playing chess and is active in the Boy Scouts of America."
+    },
+    {
+        "name":  "Rob Sewell",
+        "Company":  "Sewells Consulting",
+        "Country":  "United Kingdom",
+        "Twitter":  "sqldbawithbeard",
+        "MVP":  true,
+        "Bio":  "Rob has a passion for Powershell, Azure, Automation, \u0026 SQL (PaaS geddit?). He works as a consultant giving training, assisting companies to save money with automation and delivering database changes with DevOps\n"
+    },
+    {
+        "name":  "Sergei Vorobev",
+        "Company":  "Dropbox",
+        "Country":  "Russia",
+        "Twitter":  "xvorsx",
+        "MVP":  false,
+        "Bio":  "Sergei is a passionate software developer with more than eight years of experience. Sergei used to work in many areas, but PowerShell is his favorite project. He worked in PowerShell core team for 2.5 years developing language and engine. Sergei is responsible for open-sourcing PowerShell. He helped to bring PowerShell to Linux. During his time in the team, he also worked on various open-source PowerShell-related projects, and PlatyPS is one of them. Currently, Sergei is working in Dropbox on enterprise Dropbox products."
+    },
+    {
+        "name":  "Staffan Gustafsson",
+        "Company":  "DICE",
+        "Country":  "Sweden",
+        "Twitter":  "StaffanGson",
+        "MVP":  false,
+        "Bio":  "Software Engineer and PowerShell geek.\n\nLong term member of the PowerShell community (since before launch)\n\nActively contributes to PowerShell source code at GitHub, mostly, but not exclusively, in areas around type inference and completions.\n"
+    },
+    {
+        "name":  "Stuart Preston",
+        "Company":  "Chef",
+        "Country":  "United Kingdom",
+        "Twitter":  "stuartpreston",
+        "MVP":  true,
+        "Bio":  "Stuart is a Principal Engineer within the Community Engineering team at Chef, focusing on the Microsoft ecosystem. Over a career spanning two decades he has helped enterprises of all shapes and sizes build scalable systems and integrations on the Microsoft platform. Stuart is a keen supporter of Chef and Microsoft Azure via his open-source contributions and he is a published author on the topic. He has been a Microsoft MVP (Azure) since 2016."
+    },
+    {
+        "name":  "Thorsten Butz",
+        "Company":  "Thosten Butz Consulting",
+        "Country":  "Germany",
+        "Twitter":  "thorstenbutz",
+        "MVP":  false,
+        "Bio":  "Thorsten Butz is a distinguished \"Microsoft Certified Trainer\" (MCT), consultant, book author and podcaster. He started his career in the late 1990s as a networking specialist and Unix enthusiast. He conducts Microsoft\u0027s server technologies since 2000. His desire for scripting and automation brought him at an early stage to his current focal point: the Windows PowerShell\nThorsten is the host of the \"Sliding Windows\" podcast and a frequent speaker at community conferences. "
+    },
+    {
+        "name":  "Walter Legowski",
+        "Company":  "",
+        "Country":  "France",
+        "Twitter":  "SadProcessor",
+        "MVP":  false,
+        "Bio":  "###**Walter Legowski - @SadProcessor**\nPowerShell Automation Engineer by day,\nDIY Offensive PowerShell Tool Smith by night.\nI like Lego, Tools, (Offensive) PowerShell and some other things.\nI am the only PowerShell guy in my team. My Colleagues told me I say \u0027PowerShell\u0027 too often... Can\u0027t help it.\nLove the PowerShell Community and am trying to give back a bit of what it gave me…"
+    },
+    {
+        "name":  "Will Schroeder",
+        "Company":  "SpecterOps",
+        "Country":  "USA",
+        "Twitter":  "harmj0y",
+        "MVP":  true,
+        "Bio":  "Will is an experienced red teamer and researcher in the field of information security with a focus on red teaming, Active Directory, and offensive PowerShell. He has spoken at a number of security conferences including PSConfEU, ShmooCon, Troopers, DEF CON, BlackHat, BlueHat Israel, and more. He co-founded the Veil-Framework, developed PowerUp/PowerView, is an active PowerSploit developer, co-founded the BloodHound analysis platform, and co-founded PowerShell Empire. Will is also a Microsoft PowerShell MVP, a veteran Black Hat trainer, and an active blogger on PowerShell and security topics."
+    },
+    {
+        "name":  "Wojciech Sciesinski",
+        "Company":  "Mobica",
+        "Country":  "Poland",
+        "Twitter":  "Itpraktyk",
+        "MVP":  false,
+        "Bio":  "IT specialist with 15 years of experience in areas\n- Microsoft Windows Server technologies\n- Microsoft Exchange Server 2007-2016\n- Linux servers\n- DevOps related tools (Ansible, GitLab CI, Jenkins, Nexus)"
+    },
+    {
+        "name":  "Julien Reisdorffer",
+        "Company":  "Microsoft Germany",
+        "Country":  "Germany",
+        "Twitter":  "",
+        "MVP":  false,
+        "Bio":  "Julien joined Microsoft´s Cyber Defence, Security and Identity after gathering experience for over 7 years in multiple Security domains and roles. Combined with his extensive knowledge in the offensive security realm, he helps customers to approach Cyber Security in a holistic and effective manner, therefore offering a wide range of expertise from Security Architecture to detecting and responding to attacks."
+    },
+    {
+        "name":  "Dongbo Wang",
+        "Company":  "PowerShell Team",
+        "Country":  "USA",
+        "Twitter":  "",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Steve Lee",
+        "Company":  "PowerShell Team",
+        "Country":  "USA",
+        "Twitter":  "Steve_MSFT",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Eamon O\u0027Reilly",
+        "Company":  "PowerShell Team",
+        "Country":  "USA",
+        "Twitter":  "AzureAutomation",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Michael Greene",
+        "Company":  "PowerShell Team",
+        "Country":  "USA",
+        "Twitter":  "migreene",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Jeffrey Snover",
+        "Company":  "Microsoft",
+        "Country":  "USA",
+        "Twitter":  "jsnover",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Tobias Weltner",
+        "Company":  "ISESteroids",
+        "Country":  "Germany",
+        "Twitter":  "tobiaspsp",
+        "MVP":  true,
+        "Bio":  ""
+    },
+    {
+        "name":  "Bruce Payette",
+        "Company":  "PowerShell Team",
+        "Country":  "USA",
+        "Twitter":  "brucepayette",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Joey Aiello",
+        "Company":  "PowerShell Team",
+        "Country":  "USA",
+        "Twitter":  "joeyaiello",
+        "MVP":  false,
+        "Bio":  ""
+    }
+]
