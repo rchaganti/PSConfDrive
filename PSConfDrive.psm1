@@ -1,8 +1,5 @@
 using namespace Microsoft.PowerShell.SHiPS
 
-#Load the PSConf Agenda from agenda.json
-
-
 [SHiPSProvider()]
 class PSConfEU : SHiPSDirectory
 {
@@ -19,11 +16,11 @@ class PSConfEU : SHiPSDirectory
         $dayCounter = 1
         foreach ($day in $agendaDate)
         {
-            $obj += [PSConfEUDay]::new("Day$dayCounter", $day)
+            $obj += [PSConfEUDay]::new("Day$dayCounter", $day, $agenda)
             $dayCounter += 1
         }
 
-        $obj += [PSConfEUSpeaker]::new('Speakers')
+        $obj += [PSConfEUSpeaker]::new('Speakers',$agenda)
         return $obj
     }
 }
@@ -31,10 +28,11 @@ class PSConfEU : SHiPSDirectory
 [SHiPSProvider()]
 class PSConfEUSpeaker : SHiPSDirectory
 {
-    [string] $date
+    hidden [object] $agenda
     
-    PSConfEUSpeaker([string]$name): base($name)
+    PSConfEUSpeaker([string]$name, [object]$agenda): base($name)
     {
+        $this.agenda = $agenda
     }
 
     [object[]] GetChildItem()
@@ -43,14 +41,14 @@ class PSConfEUSpeaker : SHiPSDirectory
         $speakers = Get-Content -Path "$PSScriptRoot\Speakers.json" -raw | ConvertFrom-Json
         foreach ($speaker in $speakers)
         {
-            $obj += [PSConfEUSpeakerBIO]::New($speaker.name, $speaker)
+            $obj += [PSConfEUSpeakerBIO]::New($speaker.name, $speaker, $this.agenda, $null)
         }
         return $obj
     }
 }
 
 [SHiPSProvider()]
-class PSConfEUSpeakerBIO : SHiPSLeaf
+class PSConfEUSpeakerBIO : SHiPSDirectory
 {
     [string] $country
     [string] $company
@@ -58,39 +56,63 @@ class PSConfEUSpeakerBIO : SHiPSLeaf
     [bool] $MVP
     [string] $bio
 
-    Hidden [object] $speakerData = $null
+    Hidden [object] $speakerData
+    Hidden [object] $agenda
+    [string] $date
     
-    PSConfEUSpeakerBIO() : base ()
+    PSConfEUSpeakerBIO():base()
     {
     }
   
-    PSConfEUSpeakerBIO([String] $name, [Object] $speakerData): base($name)
+    PSConfEUSpeakerBIO([String] $name, [Object] $speakerData, [Object]$agenda, [string]$date): base($name)
     {
       $this.speakerData = $speakerData
+      $this.agenda = $agenda
       $this.country = $speakerData.country
       $this.company = $speakerData.company
       $this.Twitter = $speakerData.Twitter
       $this.MVP = $speakerData.MVP
       $this.BIO = $speakerData.BIO
+      $this.Date = $date
     }
+
+    [object[]] GetChildItem()
+    {
+        $obj = @()
+        $speakerSessions = Get-AgendaItem -BySpeaker $this.name -agenda $this.agenda
+        
+        if ($this.date -ne $null)
+        {
+            $speakerSessions = $speakerSessions.Where({$_.StartTime -like "*$($this.date)*"})
+        }
+
+        foreach ($session in $speakerSessions)
+        {
+            $obj += [PSConfEUSession]::New($session.Id, $session)
+        }
+        return $obj
+    }    
 }
 
 [SHiPSProvider()]
 class PSConfEUDay : SHiPSDirectory
 {
+    hidden [object] $agenda
     [string] $date
     
-    PSConfEUDay([string]$name, [string]$date): base($name)
+    PSConfEUDay([string]$name, [string]$date, [object]$agenda): base($name)
     {
+        $this.agenda = $agenda
         $this.date = $date
     }
 
     [object[]] GetChildItem()
     {
         $obj = @()
-        $obj += [PSConfEUSessionByDay]::new('All', $this.date)
-        $obj += [PSConfEUSessionBySpeaker]::new('BySpeaker', $this.date)
-        $obj += [PSConfEUSessionByCategory]::new('ByCategory', $this.date)
+        $obj += [PSConfEUSessionByDay]::new('All', $this.date, $this.agenda)
+        $obj += [PSConfEUSessionBySpeaker]::new('BySpeaker', $this.date, $this.agenda)
+        $obj += [PSConfEUSessionByCategory]::new('ByCategory', $this.date, $this.agenda)
+        $obj += [PSConfEUNextSession]::new('Next', $this.date, $this.agenda)
         return $obj
     }
 }
@@ -130,18 +152,45 @@ class PSConfEUSession : SHiPSLeaf
 class PSConfEUSessionByDay : SHiPSDirectory
 {
     [string] $date
+    hidden [object] $agenda
     
-    PSConfEUSessionByDay([string]$name, [string]$date): base($name)
+    PSConfEUSessionByDay([string]$name, [string]$date, [object]$agenda): base($name)
     {
+        $this.agenda = $agenda
         $this.date = $date
     }
 
     [object[]] GetChildItem()
     {
         $obj = @()
-        $agenda = Get-Content -Path "$PSScriptRoot\agenda.json" -raw | ConvertFrom-Json
-        $sessions = Get-AgendaItem -agenda $agenda -ByDate $this.date
+        $sessions = Get-AgendaItem -agenda $this.agenda -ByDate $this.date
         foreach ($session in $sessions)
+        {
+            $obj += [PSConfEUSession]::new($session.Id, $session)
+        }
+
+        return $obj
+    }
+}
+
+[SHiPSProvider()]
+class PSConfEUNextSession : SHiPSDirectory
+{
+    [string] $date
+    hidden [object] $agenda
+    
+    PSConfEUNextSession([string]$name, [string]$date, [object]$agenda): base($name)
+    {
+        $this.agenda = $agenda
+        $this.date = $date
+    }
+
+    [object[]] GetChildItem()
+    {
+        $obj = @()
+        $sessions = Get-AgendaItem -agenda $this.agenda -ByDate $this.date        
+        $upcomingSessions = $sessions.Where({[DateTime]$_.StartTime -gt (Get-Date)})
+        foreach ($session in $upcomingSessions)
         {
             $obj += [PSConfEUSession]::new($session.Id, $session)
         }
@@ -154,20 +203,25 @@ class PSConfEUSessionByDay : SHiPSDirectory
 class PSConfEUSessionBySpeaker : SHiPSDirectory
 {
     [string] $date
+    hidden [object] $agenda
     
-    PSConfEUSessionBySpeaker([string]$name, [string]$date): base($name)
+    PSConfEUSessionBySpeaker([string]$name, [string]$date, [object]$agenda): base($name)
     {
         $this.date = $date
+        $this.agenda = $agenda
     }
 
     [object[]] GetChildItem()
     {
         $obj = @()
-        $agenda = Get-Content -Path "$PSScriptRoot\agenda.json" -raw | ConvertFrom-Json
-        $speakers = Get-AgendaSpeaker -agenda $agenda
-        foreach ($speaker in $speakers)
+        $daySpeakers = Get-AgendaSpeaker -agenda $this.Agenda -ByDate $this.date
+        $allSpeakers = Get-Content -Path "$PSScriptRoot\Speakers.json" -raw | ConvertFrom-Json
+        foreach ($speaker in $allSpeakers)
         {
-            $obj += [PSConfEUSessionSpeaker]::new($speaker, $this.date)
+            if ($daySpeakers -Contains $speaker.Name)
+            {
+                $obj += [PSConfEUSpeakerBIO]::New($speaker.name, $speaker, $this.agenda, $this.date)
+            }
         }
         return $obj
     }
@@ -177,17 +231,18 @@ class PSConfEUSessionBySpeaker : SHiPSDirectory
 class PSConfEUSessionSpeaker : SHiPSDirectory
 {
     [string] $date
+    hidden [object] $agenda
     
-    PSConfEUSessionSpeaker([string]$name, [string]$date): base($name)
+    PSConfEUSessionSpeaker([string]$name, [string]$date, [object]$agenda): base($name)
     {
         $this.date = $date
+        $this.agenda = $agenda
     }
 
     [object[]] GetChildItem()
     {
-        $obj = @()
-        $agenda = Get-Content -Path "$PSScriptRoot\agenda.json" -raw | ConvertFrom-Json        
-        $allDaySessions = Get-AgendaItem -agenda $agenda -BySpeaker $this.name
+        $obj = @()     
+        $allDaySessions = Get-AgendaItem -agenda $this.agenda -BySpeaker $this.name
         $speakerSessions = $allDaySessions | Where-Object {$_.StartTime -like "*$($this.Date)*"}
         foreach ($session in $speakerSessions)
         {
@@ -201,22 +256,23 @@ class PSConfEUSessionSpeaker : SHiPSDirectory
 class PSConfEUSessionByCategory : SHiPSDirectory
 {
     [string] $date
+    hidden [object] $agenda
     
-    PSConfEUSessionByCategory([string]$name, [string]$date): base($name)
+    PSConfEUSessionByCategory([string]$name, [string]$date, [object]$agenda): base($name)
     {
         $this.date = $date
+        $this.agenda = $agenda
     }
 
     [object[]] GetChildItem()
     {
-        $obj = @()
-        $agenda = Get-Content -Path "$PSScriptRoot\agenda.json" -raw | ConvertFrom-Json        
-        $allCategories = Get-AgendaCategory -agenda $agenda
+        $obj = @()    
+        $allCategories = Get-AgendaCategory -agenda $this.agenda
         foreach ($category in $allCategories)
         {
             if ($category)
             {
-                $obj += [PSConfEUSessionCategory]::new($category, $this.date)
+                $obj += [PSConfEUSessionCategory]::new($category, $this.date, $this.agenda)
             }
         }            
         return $obj
@@ -227,17 +283,18 @@ class PSConfEUSessionByCategory : SHiPSDirectory
 class PSConfEUSessionCategory : SHiPSDirectory
 {
     [string] $date
+    hidden [object] $agenda
     
-    PSConfEUSessionCategory([string]$name, [string]$date): base($name)
+    PSConfEUSessionCategory([string]$name, [string]$date, [object]$agenda): base($name)
     {
         $this.date = $date
+        $this.agenda = $agenda
     }
 
     [object[]] GetChildItem()
     {
-        $obj = @()
-        $agenda = Get-Content -Path "$PSScriptRoot\agenda.json" -raw | ConvertFrom-Json 
-        $allCatergorySessions = Get-AgendaItem -agenda $agenda -ByCategory $this.name
+        $obj = @()        
+        $allCatergorySessions = Get-AgendaItem -agenda $this.agenda -ByCategory $this.name
         $daySessions = $allCatergorySessions | Where-Object {$_.StartTime -like "*$($this.date)*"}
         foreach ($session in $daySessions)
         {
@@ -269,10 +326,15 @@ function Get-AgendaSpeaker
     (
         [Parameter(Mandatory = $true)]
         [Object]
-        $agenda
+        $agenda,
+
+        [Parameter(Mandatory = $true)]
+        [string]
+        $ByDate
     )
 
-    $uniqueSpeakers = $agenda.Speaker.Foreach({ $_.Split(',') }).Trim() | Select-Object -Unique
+    $daySpeakers = $agenda.Where({$_.StartTime -like "*$ByDate*"}).Speaker
+    $uniqueSpeakers = $daySpeakers.Foreach({ $_.Split(',') }).Trim() | Select-Object -Unique
     return $uniqueSpeakers
 }
 

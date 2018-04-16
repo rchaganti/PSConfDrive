@@ -26,7 +26,7 @@
     {
         "title":  "PowerShell 2018 - State of the Art (Keynote)",
         "Speaker":  "Jeffrey Snover",
-        "StartTime":  "2018-04-17 09:45:00",
+        "StartTime":  "2018-04-17 09:30:00",
         "Type":  "Presentation",
         "Track":  1,
         "Slot":  3,
@@ -36,13 +36,13 @@
         "ID":  3
     },
     {
-        "title":  "The Current State of PowerShell Security Features and Bypasses",
-        "Speaker":  "Matt Graeber",
+        "title":  "Managing your heterogeneous environments with PowerShell Core 6.0 and Win32-OpenSSH",
+        "Speaker":  "Joey Aiello",
         "StartTime":  "2018-04-17 11:00:00",
         "Type":  "Presentation",
         "Track":  1,
         "Slot":  4,
-        "abstract":  "Many attackers now fear the strong security features present in PowerShell v5. Other, more persistent adversaries, however, will continue to make investments in bypasses. Find out what the current state of the art is in PowerShell security and how attackers are evolving their tactics.",
+        "abstract":  "Join us to learn how to managie your heterogeneous environments with PowerShell Core 6.0 and Win32-OpenSSH",
         "Duration":  60,
         "Category":  "Security",
         "ID":  4
@@ -109,7 +109,7 @@
     },
     {
         "title":  "Red vs. Blue – Ready, Steady, Fight!",
-        "Speaker":  "Julien Reisdorffer,David das Neves",
+        "Speaker":  "Julien Reisdorffer, David das Neves",
         "StartTime":  "2018-04-17 14:15:00",
         "Type":  "Presentation",
         "Track":  1,
@@ -132,27 +132,27 @@
         "ID":  11
     },
     {
-        "title":  "vSphereDSC: the long and winding road",
-        "Speaker":  "Luc Dekens",
+        "title":  "How to become a PowerShell Type System Ninja! (Part 1)",
+        "Speaker":  "Mathias Jessen",
         "StartTime":  "2018-04-17 14:15:00",
         "Type":  "Presentation",
         "Track":  3,
         "Slot":  6,
-        "abstract":  "The vSphereDSC project started some years ago. In the mean time PowerShell, DSC and vSphere have progressed. New features opened new possibilities. Deployment and testing DSC resources has evolved, and vSphereDSC has adapted to this as well, from class-based resources to a Deployment Pipeline.",
+        "abstract":  "This is part 1 of a 2-part hot session focusing on two exciting topics:\n1) Exploring the type system using simple tools like powershell.exe and PSReadLine.\n2) Generating and emitting types at runtime using just powershell - no C# skills needed! \nAttendees will be empowered by ETS and riches hiding right beneath their feet!\nIf you liked what you have seen in this session, come to part 2 tomorrow to dig deeper!",
         "Duration":  60,
         "Category":  "DevOps",
         "ID":  12
     },
     {
-        "title":  "Hands-on JEA",
-        "Speaker":  "Jan-Hendrik Peters, Raimund Andree",
+        "title":  "Securing your infrastructure with JEA",
+        "Speaker":  "Miriam Wiesner",
         "StartTime":  "2018-04-17 15:30:00",
         "Type":  "Presentation",
         "Track":  1,
         "Slot":  7,
-        "abstract":  "By now you have heard of Just Enough Administration - but have you actually configured it yet? In this training session we will delve into creating JEA endpoints for various purposes - from typical Help Desk scenarios to DSC node self-registration!",
+        "abstract":  "If you don\u0027t know JEA yet, this is your chance to catch up: What is JEA and how can it help you securing your infrastructure (+Tiering model)? How does it work? Which components are there and how to deploy? Use Cases on JEA Insecure configurations/exploiting risky JEA configuration",
         "Duration":  60,
-        "Category":  "Security",
+        "Category":  "",
         "ID":  13
     },
     {
@@ -169,7 +169,7 @@
     },
     {
         "title":  "How we made Configurable Pester Tests for SQL Server",
-        "Speaker":  "Chrissy LeMaire,Rob Sewell",
+        "Speaker":  "Chrissy LeMaire, Rob Sewell",
         "StartTime":  "2018-04-17 15:30:00",
         "Type":  "Presentation",
         "Track":  3,
@@ -216,7 +216,7 @@
         "ID":  18
     },
     {
-        "title":  "Introduction Workshops",
+        "title":  "Getting Ready for Workshops",
         "Speaker":  "All",
         "StartTime":  "2018-04-17 17:45:00",
         "Type":  "Discussion",
@@ -300,7 +300,7 @@
         "ID":  25
     },
     {
-        "title":  "How to become a PowerShell Type System Ninja!",
+        "title":  "How to become a PowerShell Type System Ninja! (Part 2",
         "Speaker":  "Mathias Jessen",
         "StartTime":  "2018-04-18 09:45:00",
         "Type":  "Presentation",
@@ -312,15 +312,15 @@
         "ID":  26
     },
     {
-        "title":  "Become a PowerShell Debugging Ninja",
-        "Speaker":  "Kirk Munro",
+        "title":  "Hands-on JEA",
+        "Speaker":  "Jan-Hendrik Peters, Raimund Andree",
         "StartTime":  "2018-04-18 11:00:00",
         "Type":  "Presentation",
         "Track":  1,
         "Slot":  3,
-        "abstract":  "You\u0027ve written PowerShell scripts or functions, and maybe packaged them up in a module. Then suddenly, when you least expect it, it shows up. It\u0027s red, and it\u0027s scary. You\u0027ve hit a bug. But fear not! You, too, can become a PowerShell Debugging Ninja! Come to this session to learn how! Hi-yaaaaaaaah!",
+        "abstract":  "By now you have heard of Just Enough Administration - but have you actually configured it yet? In this training session we will delve into creating JEA endpoints for various purposes - from typical Help Desk scenarios to DSC node self-registration!",
         "Duration":  60,
-        "Category":  "PowerShell",
+        "Category":  "Security",
         "ID":  27
     },
     {
@@ -384,13 +384,13 @@
         "ID":  32
     },
     {
-        "title":  "Azure Automation \u0026 Management with PowerShell \u0026 DSC ",
-        "Speaker":  "Eamon O’Reilly,Michael Greene",
+        "title":  "DSC in Azure Automation: Run configuration and orchestration as a cloud service",
+        "Speaker":  "Michael Greene",
         "StartTime":  "2018-04-18 14:15:00",
         "Type":  "Presentation",
         "Track":  1,
         "Slot":  5,
-        "abstract":  "TBA - Presented by a PowerShell team member from Microsoft",
+        "abstract":  "DSC in Azure Automation: Run configuration and orchestration as a cloud service",
         "Duration":  60,
         "Category":  "DevOps",
         "ID":  33
@@ -469,7 +469,7 @@
     },
     {
         "title":  "Workshop: The Power of the Dark Side: Offensive PowerShell Workshop",
-        "Speaker":  "Will Schroeder,Matt Graeber,Jared Atkinson",
+        "Speaker":  "Will Schroeder,Jared Atkinson",
         "StartTime":  "2018-04-18 17:00:00",
         "Type":  "Workshop",
         "Track":  1,
@@ -504,44 +504,44 @@
         "ID":  42
     },
     {
-        "title":  "A Historical Architectural Tour of PowerShell",
-        "Speaker":  "Bruce Payette",
+        "title":  "Auditing Domain Trust Relationships",
+        "Speaker":  "Will Schroeder",
         "StartTime":  "2018-04-19 08:30:00",
         "Type":  "Presentation",
         "Track":  1,
         "Slot":  1,
-        "abstract":  "Join us for a look at how PowerShell has evolved over time. We\u0027ll look at both the technical and environmental drivers behind many of the decisions that made PowerShell what it is today.",
+        "abstract":  "Does your organization have one or more Active Directory domain trusts? Can you guarantee that your trust “mesh” is configured correctly? This talk will explain domain trusts in depth and show how they can be easily audited from an defensive or offensive perspective with PowerShell/PowerView.",
         "Duration":  60,
-        "Category":  "",
+        "Category":  "Security",
         "ID":  43
     },
     {
-        "title":  "Werde zum XML Ninja mit PowerShell",
-        "Speaker":  "Andreas Nick",
+        "title":  "PowerShell for SharePoint Online - How DevOps is making SharePoint Admins feel loved again",
+        "Speaker":  "Rick Taylor",
         "StartTime":  "2018-04-19 08:30:00",
         "Type":  "Presentation",
         "Track":  2,
         "Slot":  1,
-        "abstract":  "XML als Datenspeicher oder als einfache Datenbank in Form einer Textdatei wird häufig in der PowerShell genutzt. In dieser Session kannst Du lernen, wie Du XML optimaler nutzen kannst.Bsp. über XPATH nach Elementen oder nach XML Attributen suchen, Umgang mit Namensräumen usw.",
+        "abstract":  "For years admins have been performing repetitive tasks - even with the advent of PowerShell, they still repeat many tasks over and over.    This session helps SharePoint admins understand the \"Dev\" in DevOps \u0026 understand the CD approach \u0026 give them practical guidance they can implement immediately.",
         "Duration":  60,
-        "Category":  "PowerShell",
+        "Category":  "Sharepoint",
         "ID":  44
     },
     {
-        "title":  "Reverse DSC - Making SharePoint Admins feel loved again",
-        "Speaker":  "Rick Taylor",
+        "title":  "Dependencies, how to make them evident",
+        "Speaker":  "Irwin Strachan",
         "StartTime":  "2018-04-19 08:30:00",
         "Type":  "Presentation",
         "Track":  3,
         "Slot":  1,
-        "abstract":  "For SharePoint, DSC is a sensitive topic.  Because it is idempotent, it may cause some headaches for SharePoint Admins.  REVERSE DSC, however, allows me to do a couple of things: make changes and have those changes reflected in the lower environments and update my documentation at the same time! ",
+        "abstract":  "Assumptions is the mother of all screw-ups. Making dependencies evident will keep your assumptions in check!",
         "Duration":  60,
-        "Category":  "DevOps",
+        "Category":  "PowerShell",
         "ID":  45
     },
     {
         "title":  "The PowerShell Security Best Practice Live Demo! (Part 1)",
-        "Speaker":  "David das Neves,Julien Reisdorffer,Raimund Andree",
+        "Speaker":  "David das Neves, Julien Reisdorffer, Raimund Andree, Miriam Wiesner",
         "StartTime":  "2018-04-19 09:45:00",
         "Type":  "Presentation",
         "Track":  1,
@@ -564,20 +564,20 @@
         "ID":  47
     },
     {
-        "title":  "Everything you always wanted to know about using API from PowerCLI",
-        "Speaker":  "Luc Dekens",
+        "title":  "Manage servers using configuration as code",
+        "Speaker":  "Michael Greene",
         "StartTime":  "2018-04-19 09:45:00",
         "Type":  "Presentation",
         "Track":  3,
         "Slot":  2,
-        "abstract":  "You are an advanced PowerCLI user and you have automated most of your daily admin tasks. This session will show you how you can achieve the next level by using the API (SOAP and REST) methods to automate further. You\u0027ll see how to execute \"impossible\" tasks on the ESXi node and inside the guest OS. ",
+        "abstract":  "Manage servers using configuration as code",
         "Duration":  60,
-        "Category":  "PowerShell",
+        "Category":  "Azure",
         "ID":  48
     },
     {
         "title":  "The PowerShell Security Best Practice Live Demo! (Part 2)",
-        "Speaker":  "David das Neves,Julien Reisdorffer,Raimund Andree",
+        "Speaker":  "David das Neves, Julien Reisdorffer, Raimund Andree, Miriam Wiesner",
         "StartTime":  "2018-04-19 10:50:00",
         "Type":  "Presentation",
         "Track":  1,
@@ -612,15 +612,15 @@
         "ID":  51
     },
     {
-        "title":  "Auditing Domain Trust Relationships",
-        "Speaker":  "Will Schroeder",
+        "title":  "A Historical Architectural Tour of PowerShell (Part 1)",
+        "Speaker":  "Bruce Payette",
         "StartTime":  "2018-04-19 12:35:00",
         "Type":  "Presentation",
         "Track":  1,
         "Slot":  4,
-        "abstract":  "Does your organization have one or more Active Directory domain trusts? Can you guarantee that your trust “mesh” is configured correctly? This talk will explain domain trusts in depth and show how they can be easily audited from an defensive or offensive perspective with PowerShell/PowerView.",
+        "abstract":  "Join us for a look at how PowerShell has evolved over time. We\u0027ll look at both the technical and environmental drivers behind many of the decisions that made PowerShell what it is today. This is part 1 of a two part presentation.",
         "Duration":  60,
-        "Category":  "Security",
+        "Category":  "",
         "ID":  52
     },
     {
@@ -648,15 +648,15 @@
         "ID":  54
     },
     {
-        "title":  "PowerShell Code Signing: Practical Applications, Attacks, and Mitigations",
-        "Speaker":  "Matt Graeber",
+        "title":  "A Historical Architectural Tour of PowerShell (Part 2)",
+        "Speaker":  "Bruce Payette",
         "StartTime":  "2018-04-19 13:45:00",
         "Type":  "Presentation",
         "Track":  1,
         "Slot":  5,
-        "abstract":  "Whether using it to validate the integrity of PowerShell Gallery modules or enforcing application whitelisting, PowerShell code signing practices are extremely valuable. Learn how to sign code, enforce policy, and play the role of an attacker attempting to subvert digital signatures!",
+        "abstract":  "Join us for a look at how PowerShell has evolved over time. We\u0027ll look at both the technical and environmental drivers behind many of the decisions that made PowerShell what it is today. This is part 2 of a two part presentation.",
         "Duration":  60,
-        "Category":  "Security",
+        "Category":  "",
         "ID":  55
     },
     {
@@ -684,7 +684,7 @@
         "ID":  57
     },
     {
-        "title":  "PowerShell Core 6.1",
+        "title":  "PowerShell Core 6.1 and beyond",
         "Speaker":  "Steve Lee",
         "StartTime":  "2018-04-19 14:55:00",
         "Type":  "Presentation",
@@ -696,15 +696,15 @@
         "ID":  58
     },
     {
-        "title":  "PowerShell for SharePoint Online - How DevOps is making SharePoint Admins feel loved again",
-        "Speaker":  "Rick Taylor",
+        "title":  "Werde zum XML Ninja mit PowerShell",
+        "Speaker":  "Andreas Nick",
         "StartTime":  "2018-04-19 14:55:00",
         "Type":  "Presentation",
         "Track":  2,
         "Slot":  6,
-        "abstract":  "For years admins have been performing repetitive tasks - even with the advent of PowerShell, they still repeat many tasks over and over.    This session helps SharePoint admins understand the \"Dev\" in DevOps \u0026 understand the CD approach \u0026 give them practical guidance they can implement immediately.",
+        "abstract":  "XML als Datenspeicher oder als einfache Datenbank in Form einer Textdatei wird häufig in der PowerShell genutzt. In dieser Session kannst Du lernen, wie Du XML optimaler nutzen kannst.Bsp. über XPATH nach Elementen oder nach XML Attributen suchen, Umgang mit Namensräumen usw.",
         "Duration":  60,
-        "Category":  "Sharepoint",
+        "Category":  "PowerShell",
         "ID":  59
     },
     {
@@ -744,15 +744,15 @@
         "ID":  62
     },
     {
-        "title":  "Introduction to Azure Function Apps",
-        "Speaker":  "Kirk Munro",
+        "title":  "Howto: Not get a burnout",
+        "Speaker":  "Jeff Wouters",
         "StartTime":  "2018-04-19 16:05:00",
         "Type":  "Presentation",
         "Track":  3,
         "Slot":  7,
-        "abstract":  "Serverless computing with Azure Function Apps and PowerShell is a boon for automators. Azure Functions are very low cost, and very, very powerful. This session will introduce you to Azure Function Apps, show you the ins and outs, and give you a head start in your serverless computing initiatives!",
+        "abstract":  "You hear it every once in a while: Someone that\u0027s sick at home, undergoing a burnout. How do you avoid this yourself? Do you recognize the signs? What are the signs? Can you maintain a work-life balance? Is it the same for everyone? If not, what is it for you?\nIn this lunch break session, Jeff Wouters covers some of these topics that affect all of us, one way or another.",
         "Duration":  60,
-        "Category":  "Azure",
+        "Category":  "PowerShell",
         "ID":  63
     },
     {
@@ -780,15 +780,15 @@
         "ID":  65
     },
     {
-        "title":  "Dependencies, how to make them evident",
-        "Speaker":  "Irwin Strachan",
+        "title":  "Reverse DSC - Making SharePoint Admins feel loved again",
+        "Speaker":  "Rick Taylor",
         "StartTime":  "2018-04-19 17:15:00",
         "Type":  "Presentation",
         "Track":  3,
         "Slot":  8,
-        "abstract":  "Assumptions is the mother of all screw-ups. Making dependencies evident will keep your assumptions in check!",
+        "abstract":  "For SharePoint, DSC is a sensitive topic.  Because it is idempotent, it may cause some headaches for SharePoint Admins.  REVERSE DSC, however, allows me to do a couple of things: make changes and have those changes reflected in the lower environments and update my documentation at the same time! ",
         "Duration":  60,
-        "Category":  "PowerShell",
+        "Category":  "DevOps",
         "ID":  66
     },
     {
@@ -853,7 +853,7 @@
     },
     {
         "title":  "Hybrid Lab Automation",
-        "Speaker":  "Jan-Hendrik Peters,Raimund Andree",
+        "Speaker":  "Jan-Hendrik Peters, Raimund Andree",
         "StartTime":  "2018-04-20 09:45:00",
         "Type":  "Presentation",
         "Track":  3,

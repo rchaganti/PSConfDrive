@@ -160,14 +160,6 @@
         "Bio":  "David das Neves is a former software developer and works now at Microsoft Germany as Premier Field Engineer with the main specialties of Powershell, Windows 10 and Client Security. He is also focused in client workshops and dev requests. Besides his work he writes his own blog, organizes the Powershell UG Munich and speaks at User Groups and Conferences on PS/Dev topics."
     },
     {
-        "name":  "Kirk Munro",
-        "Company":  "Learn on Demand Systems",
-        "Country":  "USA",
-        "Twitter":  "Poshoholic",
-        "MVP":  true,
-        "Bio":  "Kirk Munro is the world\u0027s first self-proclaimed Poshoholic, and a 10-time PowerShell MVP. Since being bitten by the PowerShell (PoSh) bug in 2006, Kirk has spent an enormous amount of time using and helping others learn PowerShell and automation, in roles of developer, evangelist, trainer, architect, Product Manager, and Director. These days he works as Director of Learning Solutions at Learn on Demand Systems, where he continues helping others learn by focusing on new technologies that enrich the learning experience even more. Outside of work, Kirk is returning to his software developer roots, learning mobile technologies like Xamarin and Ruby on Rails, and taking courses online whenever he can make the time to do so."
-    },
-    {
         "name":  "Luc Dekens",
         "Company":  "Eurocontrol",
         "Country":  "Belgium",
@@ -182,14 +174,6 @@
         "Twitter":  "IISResetMe",
         "MVP":  false,
         "Bio":  "Security engineer at scale, frequent victim of nerd sniping and PowerShell-fanboy 24/7. \nKnown by most for having submitted 1400+ powershell-tagged answers on StackOverflow, by some for having a passion around increasing performance by reducing algorithmic complexity, and by a few for rudely interrupting Microsoft employees and poshsplaining heavily."
-    },
-    {
-        "name":  "Matt Graeber",
-        "Company":  "SpecterOps",
-        "Country":  "USA",
-        "Twitter":  "mattifestation",
-        "MVP":  true,
-        "Bio":  "Matt Graeber is a security researcher and reverse engineer at Specter Ops, Inc. who specializes in the advancement of attacker tradecraft and detection. He has a varied background in red team operations, vulnerability research, and malware reverse engineering. Matt has presented at many industry conferences including Black Hat, DEF CON, Microsoft BlueHat, DerbyCon, BSides, and various PowerShell conferences. Matt is recognized as a Microsoft CDM MVP and is the author of various tools including PowerSploit, PowerShellArsenal, PSReflect, and CIMSweep."
     },
     {
         "name":  "Matthew Hitchcock",
@@ -320,14 +304,6 @@
         "Bio":  ""
     },
     {
-        "name":  "Eamon O\u0027Reilly",
-        "Company":  "PowerShell Team",
-        "Country":  "USA",
-        "Twitter":  "AzureAutomation",
-        "MVP":  false,
-        "Bio":  ""
-    },
-    {
         "name":  "Michael Greene",
         "Company":  "PowerShell Team",
         "Country":  "USA",
@@ -364,6 +340,14 @@
         "Company":  "PowerShell Team",
         "Country":  "USA",
         "Twitter":  "joeyaiello",
+        "MVP":  false,
+        "Bio":  ""
+    },
+    {
+        "name":  "Miriam Wiesner",
+        "Company":  "Microsoft",
+        "Country":  "USA",
+        "Twitter":  "miriamxyra",
         "MVP":  false,
         "Bio":  ""
     }
